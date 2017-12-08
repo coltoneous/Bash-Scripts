@@ -1,0 +1,14 @@
+#!/bin/bash
+# Program name: pingall.sh
+# checks if an IP a list is up or not. 
+# dependent file list.txt
+date
+cat list.txt |  while read output
+do
+    ping -c 1 "$output" > /dev/null
+    if [ $? -eq 0 ]; then
+    echo "node $output is up"
+    else
+    echo "node $output is down"
+    fi
+done
