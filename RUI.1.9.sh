@@ -62,6 +62,7 @@ elif [ -n $(which lsb_release 2> /dev/null) ] && lsb_release -d | grep -q "Debia
         sleep 1
         echo -e "\e[36m Getting Required Packages\e[0m"
 		sleep 1
+	echo -e "\e[36m !!NOTE: Debian May need sources.list Manually Setup!!\e[0m"
 		echo -e "\e[36m Installing: wget, pciutils, unzip \e[0m"
         apt-get update -y && apt-get -y install wget unzip pciutils
 elif [ -f /etc/gentoo-release ]; then 
