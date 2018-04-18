@@ -322,12 +322,10 @@ for i in `grep -v ^\# servers.lst`;do
         fi
 
         '
-        #Checking our break counter to pause script every 5 servers
-        #if [[ $(( breakcount % 5 )) == 0 ]];then
-        #        echo -e "\e[00;32m##########BREAK-$breakcount##########\e[00m"
-        #        read -n1 -r -p "Press a key to continue"
-        #fi
-
+        #
+        #
+        #        
+              
 done
 #Setting our IFS back like responsible adults
 IFS=$ifsstore
