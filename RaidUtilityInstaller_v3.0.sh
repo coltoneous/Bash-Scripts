@@ -188,7 +188,7 @@ for i in `grep -v ^\# servers.lst`;do
                 chmod +x tw_cli
                 ./tw_cli show
                 echo -e "\e[92m Done!\e[0m"
-                echo -3 "\e[92m To view run: ./tw_cli show \e[0m"
+                echo -e "\e[92m To view run: ./root/twcli/tw_cli show \e[0m"
 
                 #UBUNTU / DEBIAN
         elif [[ "$OS" == "ubuntu" ]] || [[ "$OS" == "debian" ]]; then
